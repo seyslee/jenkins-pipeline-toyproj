@@ -8,12 +8,12 @@ $ git clone https://github.com/seyslee/jenkins-pipeline-toyproject
 ### 2. Move to Dockerfile
 ```bash
 $ ls
-demolab  jenkins-docker  snap
+demolab  2-jenkins-docker  snap
 ```
 <br>
 
 ```bash
-$ mv jenkins-docker
+$ mv 2-jenkins-docker
 ```
 <br>
 
@@ -47,3 +47,19 @@ Successfully tagged jenkins-docker:latest
 ```bash
 $ docker run -p 8080:8080 -p 50000:50000 -v /var/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins -d jenkins-docker
 ```
+<br>
+
+**Port Description**  
+- TCP/8080 : Jenkins Default Port
+- TCP/50000 : Jenkins slave
+
+<br>
+
+### 5. Checking a new container
+```bash
+$ docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                                                                                      NAMES
+6a9c8b8cc642   jenkins-docker   "/sbin/tini -- /usr/…"   20 seconds ago   Up 19 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 0.0.0.0:50000->50000/tcp, :::50000->50000/tcp   jenkins
+```
+
+Done!
