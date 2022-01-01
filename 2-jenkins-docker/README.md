@@ -8,12 +8,14 @@ $ git clone https://github.com/seyslee/jenkins-pipeline-toyproject
 ### 2. Move to Dockerfile
 ```bash
 $ ls
-demolab  2-jenkins-docker  snap
+demolab  2-jenkins-docker
 ```
 <br>
 
 ```bash
-$ mv 2-jenkins-docker
+$ cd 2-jenkins-docker
+$ ls
+Dockerfile  README.md
 ```
 <br>
 
