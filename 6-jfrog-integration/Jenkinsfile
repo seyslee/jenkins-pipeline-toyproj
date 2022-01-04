@@ -1,17 +1,13 @@
-// Variables for authentication
-String jfrogUsername = ''
-String githubUsername = 'seyslee'
-
 node {
-    def server = Artifactory.server('${jfrogUsername}.jfrog.io')
+    def server = Artifactory.server('younsunglee.jfrog.io')
     def rtGradle = Artifactory.newGradleBuild()
     def buildInfo = Artifactory.newBuildInfo()
     stage 'Build'
-        git url: 'https://github.com/${githubUsername}/gs-gradle.git'
+        git url: 'https://github.com/seyslee/gs-gradle.git'
 
     stage 'Artifactory configuration'
         rtGradle.tool = 'gradle' // Tool name from Jenkins configuration
-        rtGradle.deployer repo:'gradle-dev-local',  server: server
+        rtGradle.deployer repo:'gradle-dev-local', server: server
         rtGradle.resolver repo:'gradle-dev', server: server
 
         stage('Config Build Info') {
