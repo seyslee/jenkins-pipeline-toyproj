@@ -1,15 +1,22 @@
 # Overview
-Code repository used for CI/CD pipeline for toy project.  
+Code repository used for CI/CD pipeline for toy project.    
+
+Use Jenkins the DevOps way.  
+Automate Jenkins jobs by using Jenkins Pipelines, Github, Docker, and the Jenkins Job DSL.
 <br>
 
 ### What i did
 **Integrated Jenkins Pipeline with** ...
 - Docker
+- Docker Hub Container Image Library
 - Github
 - Slack +Inbound Webhooks
 - Gradle
-- [TO DO] JFrog Artifactory
-- [To DO] SonarQube
+<br>
+
+**To do**
+- JFrog Artifactory
+- SonarQube
 <br>
 
 # Environment
