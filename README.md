@@ -12,6 +12,7 @@ Automate Jenkins jobs by using Jenkins Pipelines, Github, Docker, and the Jenkin
   - **Docker** : Docker version 20.10.12, build e91ed57
   - **Container Image** : jenkins/jenkins:lts
   - **Jenkins 2.319.1** (Deployed as a docker container)
+  - **Ports** : 8080(Jenkins web), 50000(Jenkins Slave)
 <br>
 
 ### What i did
