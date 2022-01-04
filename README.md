@@ -2,7 +2,7 @@
 Code repository used for CI/CD pipeline for toy project.    
 
 I use Jenkins the DevOps way.  
-Automate Jenkins jobs by using Jenkins Pipelines, Github, Docker, and the Jenkins Job DSL.
+Automate Jenkins jobs by using Jenkins Pipelines, Github, Docker, and the Jenkins Job DSL.  
 <br>
 
 # Environment
