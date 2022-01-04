@@ -16,11 +16,11 @@ Automate Jenkins jobs by using Jenkins Pipelines, Github, Docker, and the Jenkin
 <br>
 
 ### What i did
-**Integrated Jenkins Pipeline with** ...
+**Integrated Jenkins Pipeline with popular development software like ...**
 - Docker
 - Docker Hub Container Image Library
 - Github
-- Slack +Inbound Webhooks
+- Slack + Inbound Webhooks (Inbound Webhooks is one of slack apps.)
 - Gradle
 <br>
 
