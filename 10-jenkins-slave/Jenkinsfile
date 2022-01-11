@@ -1,0 +1,13 @@
+// Testing jenkins slave node
+node(label: 'builder') {
+  stage('Preparation') {
+    git branch: 'main', url: 'https://github.com/seyslee/nodejs-with-docker-toyproj.git'
+  }
+  stage('Build') {
+    def myTestContainer = docker.image('node:4.6')
+    myTestContainer.pull()
+    myTestContainer.inside() {
+      sh 'npm install'
+    }
+  }
+}
