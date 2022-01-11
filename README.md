@@ -27,13 +27,16 @@ Automate Jenkins jobs by using Jenkins Pipelines, Github, Docker, and the Jenkin
 - Github
 - Slack + Inbound Webhooks (Inbound Webhooks is one of slack apps.)
 - Gradle
+- JFrog Artifactory
+- SonarQube
+- Jenkins Slave
   
   <br>
 
 **To do**
 
-- JFrog Artifactory
-- SonarQube
+- Jenkins Slave using jnlp
+- BlueOcean
   
   <br>
 
