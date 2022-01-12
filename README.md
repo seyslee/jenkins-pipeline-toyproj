@@ -30,14 +30,13 @@ Automate Jenkins jobs by using Jenkins Pipelines, Github, Docker, and the Jenkin
 - JFrog Artifactory
 - SonarQube
 - Jenkins Slave
+- BlueOcean
+- Pipeline using ssh agent
   
   <br>
 
 **To do**
 
-- Jenkins Slave using jnlp
-- BlueOcean
-  
   <br>
 
 # Related repository
